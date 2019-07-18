@@ -2013,7 +2013,8 @@ section.bg--primary .slider[data-paging="true"] .flickity-page-dots .dot {
 }
 .text-center .flickity-page-dots,
 section.slider .flickity-page-dots {
-  text-align: center;
+  text-align: left !important;
+  margin-left: 30px;
 }
 .flickity-prev-next-button svg {
   display: none;
@@ -4247,7 +4248,7 @@ p a,
 span a,
 label a {
   font-size: 1em;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 400;
   line-height: 1.85714286em;
 }
@@ -6502,7 +6503,8 @@ a.block:hover > .feature {
 }
 .tabs-container.tabs--vertical .tabs li:not(:last-child) {
   border-right: none;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 0.25px solid #FFFFFF;
+  opacity: 0.4;
 }
 .tabs-container.tabs--vertical .tabs-content {
   width: 70%;
@@ -6546,7 +6548,7 @@ a.block:hover > .feature {
 }
 .tabs {
   display: inline-block;
-  border: 1px solid #ECECEC;
+  /* border: 1px solid #ECECEC; */
   border-radius: 6px;
   margin-bottom: 1.85714286em;
 }
@@ -6563,13 +6565,13 @@ a.block:hover > .feature {
   opacity: 1;
 }
 .tabs li.active .tab__title {
-  color: #4a90e2;
+  color: #efefef;
 }
 .tabs li.active .tab__title span {
-  color: #4a90e2;
+  color: #efefef;
 }
 .tabs li:not(.active) {
-  opacity: .5;
+  opacity: 1.5;
 }
 .tabs li:hover {
   opacity: 1;
@@ -8093,7 +8095,7 @@ input[type="image"] {
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   border-radius: 0;
-  background: #252525;
+  background: #fff0;
   width: 2.78571429em;
   height: 5.57142857em;
 }
@@ -9065,7 +9067,7 @@ section.unpad > article .imagebg + div {
   margin-bottom: 0;
 }
 .project-thumb.height-40 {
-  min-height: 350px;
+  height: 100%;
 }
 @media all and (max-width: 767px) {
   .project-thumb.height-40 {

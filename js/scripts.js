@@ -2485,7 +2485,7 @@ mr = (function (mr, $, window, document){
             // Attribute Overrides - options that are overridden by data attributes on the slider element
             var ao = {};
             ao.pageDots = (slider.attr('data-paging') === 'true' && sliderInitializer.find('li').length > 1) ? true : undefined;
-            ao.prevNextButtons = slider.attr('data-arrows') === 'true'? true: undefined;
+            ao.prevNextButtons = slider.attr('data-arrows') === 'false'? false: undefined;
             ao.draggable = slider.attr('data-draggable') === 'false'? false : undefined;
             ao.autoPlay = slider.attr('data-autoplay') === 'false'? false: (slider.attr('data-timing') ? parseInt(slider.attr('data-timing'), 10): undefined);
             ao.accessibility = slider.attr('data-accessibility') === 'false'? false : undefined;
