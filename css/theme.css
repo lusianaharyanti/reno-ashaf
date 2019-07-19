@@ -2079,7 +2079,7 @@ section.slider .flickity-page-dots {
 }
 .masonry .masonry__container.masonry--active .masonry__item  a :hover , a :focus{
   cursor: pointer;
-  color: #5c8c1d;
+  color: #fff;
 }
 
 .masonry .masonry__container .masonry__item {

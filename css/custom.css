@@ -5,6 +5,9 @@
 html{
     overflow-x: hidden;
 }
+.mt-5{
+    margin-top: 5px;
+}
 .mt-10{
     margin-top: 10px;
 }
@@ -34,6 +37,9 @@ html{
 }
 .mt-100{
     margin-top: 100px;
+}
+.ml-10{
+    margin-left: 10px;
 }
 .mb-0{
     margin-bottom: 0px;
@@ -98,6 +104,10 @@ html{
 .pt-100{
     padding-top: 100px;
 }
+.p-portofolio{
+    padding-top: 200px;
+    padding-bottom: 0px;
+}
 .pb-10{
     padding-bottom: 10px;
 }
@@ -134,6 +144,10 @@ html{
 .p-40{
     padding: 40px;
 }
+.plr-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .p-0202{
     padding: 0px 20px 0px 20px;
 }
@@ -146,7 +160,13 @@ html{
 .bg-gray{
     background-color: #c0c0c0;
 }
+.p-service{
+    padding-top: 200px;
+    padding-bottom: 0px;
+    padding-left: 75px;
+}
 
+/* ==============Home============== */
 .span-menu{
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
@@ -195,7 +215,46 @@ html{
     color: #FFFFFF;
     mix-blend-mode: normal;
 }
-@media all and (max-width: 768px) {
+.ml-menu{
+    margin-left: 0px;
+}
+@media (max-width: 767px){
+    .modal-container .modal-content {
+        width: 60% !important;
+        height: auto !important;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .type--fine-print {
+        font-size: 12px !important;
+    }
+    .type--fine-print-2 {
+        font-size: 11px !important;
+    }
+    .ml-menu{
+        margin-left: 40px !important;
+    }
+    .modal-container .modal-content > .modal-close-cross {
+        top: 0em !important;
+        background: #222;
+        width: 1em !important;
+        height: 1em !important;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+    }
+    .menu-fullscreen .modal-content .modal-close-cross {
+        right: 1px !important;
+        top: 8em;
+        font-size: 38px;
+    }
+}
+@media all and (max-width: 780px) {
+    .modal-container:before {
+        width: 70%;
+    }
+}
+@media (max-width: 770px) {
     .modal-container:before {
         width: 50%;
     }
@@ -225,15 +284,19 @@ html{
     color: rgba(255, 255, 255, 0.8);
     opacity: 0.6;
 }
+/* ============End Home============ */
 
 
-/* about */
+/* ==============About============== */
 .project-thumb.hover-element .hover-element__reveal .project-thumb__title {
     padding: 1.85714286em;
     z-index: 2;
     position: relative;
-    top: 65%;
+    top: 75%;
     color: #fff;
+}
+.top-hover{
+    top: 60% !important;
 }
 .border--round {
     border-radius: 10px;
@@ -255,12 +318,85 @@ html{
     border: none;
     margin: 0 0.46428571em;
 }
+.h1-about{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.p-about{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.6;
+}
+.nama-team{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.bg-center-top{
+    background-position: center top !important;
+}
+.nama-position{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    mix-blend-mode: normal;
+}
+.bg-about-ct{
+    background-position: center top !important;
+    height: 400px !important;
+    position: relative;
+}
 @media (min-height: 600px) and (min-width: 767px){
     .height-70 {
         height: 100vh !important;
     }
 }
 @media (max-width: 780px){
+    .h1-contact{
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+    .text-address{
+        font-size: 14px !important;
+    }
+    .p-contact {
+        padding: 0px 40px 0px 40px !important;
+    }
+    .p-service{
+        padding-top: 100px;
+        padding-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .teks-menu-about{
+        text-align: left !important;
+    }
+    .plr-50{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .p-portofolio{
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
     .bar.bg--dark {
         background: #131313;
     }
@@ -273,23 +409,50 @@ html{
     background: #0e0e0e;
     opacity: 0.8;
 }
-
-/* @media (max-width: 780px){
-    .bar.bg--dark {
-        background: #ff000000;
-        width: 100%;
-        position: absolute;
-    }
-} */
-
-
-/* Service */
-
-.tabs-container.tabs--vertical .tabs {
-    width: 100%;
-    float: left;
+.teks-menu-about{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    mix-blend-mode: normal;
 }
-/* .tabs li.active .tab__title span{
+/* ============ End About============ */
+
+
+/* ==============Service============== */
+.bg--service{
+    background-color: #0e0e0e;
+}
+.img-service{
+    height: 94% !important; 
+    width: 100% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-text-service{
+    font-family:' Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.h1-service{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.h4-service{
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -297,9 +460,34 @@ html{
     line-height: 19px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #fff;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.4);
     mix-blend-mode: normal;
-} */
+}
+.span-service{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.h4-service{
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.span-service:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.tabs-container.tabs--vertical .tabs {
+    width: 100%;
+    float: left;
+}
 .tab-title:hover{
     opacity: 1;
 }
@@ -314,4 +502,181 @@ html{
 .masonry .masonry__container .masonry__item {
     opacity: 5;
     pointer-events: none;
+}
+/* ============End Service=========== */
+
+/* ==============Portofolio============== */
+.text-nama-porto{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.span-tahun-porto{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+/* ============End Portofolio============ */
+
+
+/* ============Inner Portofolio============ */
+.bg-center{
+    background-position: center !important;
+}
+.text-back{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    mix-blend-mode: normal;
+}
+.text-name-inner{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.text-inner-jenis{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.text-inner-year{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+a:hover {
+    color: #fff;
+}
+/* ==========End Inner Portofolio========== */
+
+
+/* contact */
+.br-form{
+    border-bottom: 1px solid #fff !important;
+    border-top: 0px solid !important;
+    border-left: 0px solid !important;
+    border-right: 0px !important;
+    border-radius: 0px !important;
+    opacity: 0.5;
+}
+.br-white{
+    color: white;
+}
+.p-contact{
+    padding: 0px 75px 0px 75px;
+}
+.p-text{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    mix-blend-mode: normal;
+}
+.h1-contact{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.span-contact{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.text-address{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.span-address{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.text-ig{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.text-wa{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #131313;
+    mix-blend-mode: normal;
+}
+.icon-wa{
+    font-size: 20px;
+}
+.icon-ig{
+    font-size: 20px;
+    color: #fff;
+}
+.font-place{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.6;
 }
