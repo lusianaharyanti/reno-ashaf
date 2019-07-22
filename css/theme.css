@@ -1530,7 +1530,7 @@ div.recaptcha iframe {
 .accordion li .accordion__title {
   cursor: pointer;
   padding: 0.46428571em 0.92857143em;
-  border: 1px solid #ececec;
+  border: 1px solid #ececec00;
   border-bottom: none;
   background: none;
   -webkit-user-select: none;
@@ -1553,8 +1553,8 @@ div.recaptcha iframe {
   padding-bottom: 0;
 }
 .accordion li.active .accordion__title {
-  background: #4a90e2;
-  border-bottom: 1px solid #ececec;
+  background: #4a91e200;
+  border-bottom: 0px solid #ececec;
 }
 .accordion li.active .accordion__content {
   opacity: 1;
@@ -2739,7 +2739,7 @@ div[class*='col-'][class*='-6'] .video-cover iframe {
 }
 /**! 26. Colors **/
 body {
-  background: #ffffff;
+  background: rgb(19, 19, 19) !important;
 }
 .color--primary {
   color: #4a90e2 !important;
@@ -3263,7 +3263,7 @@ form[action*='list-manage.com'] .small-meta {
     display: inline-block;
   }
 }
-@media all and (min-width: 991px) {
+@media all and (min-width: 300px) {
   .bar__module:not(:only-child) {
     display: inline-block;
   }
@@ -5429,8 +5429,8 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
   background:#000;
 }
 .menu-fullscreen .modal-content .modal-close-cross {
-  right: 1.714286em;
-  top: 8em;
+  right: 27%;
+  top: 6.8em;
   font-size: 38px;
 }
 @media all and (max-width: 767px) {
@@ -6426,21 +6426,28 @@ a.block:hover > .feature {
 }
 .accordion .accordion__title:after {
   font-family: "stack-interface";
-  content: '\e80d';
+  content: '+';
   margin-left: 10px;
-  color: #252525;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
 }
 .accordion .accordion__title span {
   display: inline-block;
 }
 .accordion li.active {
-  margin-bottom: 0.92857143em;
+  margin-bottom: 0em;
 }
 .accordion li.active .accordion__title {
   opacity: 1;
 }
 .accordion li.active .accordion__title:after {
-  content: '\e80a';
+  font-family: "stack-interface";
+  content: '-';
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
 }
 .accordion li.active .accordion__content {
   animation: fadeUp .5s ease forwards;
@@ -6456,6 +6463,19 @@ a.block:hover > .feature {
   color: #fff;
 }
 .accordion-1 li .accordion__title {
+  border-radius: 6px;
+  border-bottom: 1px solid #ECECEC;
+}
+.accordion-1a li.active .accordion__title {
+  border-color: #4a90e2;
+}
+.accordion-1a li.active .accordion__title span {
+  color: #fff;
+}
+.accordion-1a li.active .accordion__title:before {
+  color: #fff;
+}
+.accordion-1a li .accordion__title {
   border-radius: 6px;
   border-bottom: 1px solid #ECECEC;
 }
@@ -6478,12 +6498,28 @@ a.block:hover > .feature {
 .bg--primary .accordion-1 li .accordion__title {
   border-color: #4b4b4b;
 }
+.bg--dark .accordion-2 li .accordion__title,
+.imagebg:not(.image--light) .accordion-2 li .accordion__title,
+.bg--primary .accordion-2 li .accordion__title,
+.bg--dark .accordion-1b li .accordion__title,
+.imagebg:not(.image--light) .accordion-1b li .accordion__title,
+.bg--primary .accordion-1b li .accordion__title {
+  border-color: #4b4b4b;
+}
 .bg--dark .accordion-2 li .accordion__title:before,
 .imagebg:not(.image--light) .accordion-2 li .accordion__title:before,
 .bg--primary .accordion-2 li .accordion__title:before,
 .bg--dark .accordion-1 li .accordion__title:before,
 .imagebg:not(.image--light) .accordion-1 li .accordion__title:before,
 .bg--primary .accordion-1 li .accordion__title:before {
+  color: #fff;
+}
+.bg--dark .accordion-2 li .accordion__title:before,
+.imagebg:not(.image--light) .accordion-2 li .accordion__title:before,
+.bg--primary .accordion-2 li .accordion__title:before,
+.bg--dark .accordion-1b li .accordion__title:before,
+.imagebg:not(.image--light) .accordion-1b li .accordion__title:before,
+.bg--primary .accordion-1b li .accordion__title:before {
   color: #fff;
 }
 .imagebg:not(.image--light) .accordion li .accordion__title,

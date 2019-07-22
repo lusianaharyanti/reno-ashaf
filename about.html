@@ -22,55 +22,135 @@
     </head>
     <body class=" ">
         <a id="start"></a>
+        <!-- <div class="cursor"></div> -->
         <div class="nav-container ">
-          <nav class="bar bar-toggle bar--transparent bar--absolute bg--dark plr-50">
+          <nav class="bar bar-toggle bar--transparent bar--absolute plr-50">
             <div class="container-fluid">
               <div class="row align-items-center">
-                <div class="col-6">
+                <div class="col-8">
                   <div class="bar__module">
                     <a href="#">
                       <img class="logo logo-dark" alt="logo" src="img/logo-reno.png" />
                       <img class="logo logo-light" alt="logo" src="img/logo-reno.png" />
                     </a>
                   </div>
+                  <!--end module-->
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-4 d-flex justify-content-end">
                   <div class="bar__module">
                     <div class="modal-instance pull-right">
                       <a class="modal-trigger menu-toggle" href="#">
                         <i class="stack-interface stack-menu"></i>
                       </a>
                       <div class="modal-container menu-fullscreen">
-                        <div class="modal-content" data-width="35%" data-height="100%" 
-                          style="width: 40%; height: 100%;">
-                          <div class="pos-vertical-center p-40 pos-asbolute text-center">
+                        <div class="modal-content menu-ver-width">
+                          <div class="pos-vertical-center padding-menu pos-asbolute text-center"
+                            style="padding-top:110px">
                             <ul class="menu-vertical text-uppercase">
-                              <li class="h4-menu text-left mb-20">
-                                <a href="#">
+                              <li class="text-left">
+                                <a href="#" class="h4-menu mb-20">
                                   <span class="span-menu">01</span>
                                   Home
                                 </a>
                               </li>
-                              <li class="h4-menu text-left mb-20">
-                                <a href="#">
+                              <li class="text-left">
+                                <a href="#" class="h4-menu mb-20">
                                   <span class="span-menu">02</span>
                                   About
                                 </a>
                               </li>
-                              <li class="h4-menu text-left mb-20">
-                                <a href="#">
-                                  <span class="span-menu">03</span>
-                                  Services
-                                </a>
-                              </li>
-                              <li class="h4-menu text-left mb-20">
-                                <a href="#">
-                                  <span class="span-menu">04</span>
-                                  Portofolio
-                                </a>
-                              </li>
-                              <li class="h4-menu text-left mb-20">
-                                <a href="#">
+                              <ul class="accordion accordion-1b accordion--oneopen text-left">
+                                <li class="">
+                                  <div class="accordion__title" style="padding:0px !important; 
+                                    margin-bottom: 0px; opacity: 2;">
+                                    <a href="#" class="h4-menu ">
+                                      <span class="span-menu">03</span>
+                                      Services
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                        individual potrait
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                        couple potrait
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      group potrait
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      fashion
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      corporate
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      commercial
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      others
+                                    </a>
+                                  </div>
+                                </li>
+                                <li class="">
+                                  <div class="accordion__title" style="padding:0px !important; 
+                                    margin-bottom: 0px; opacity: 2;">
+                                    <a href="#" class="h4-menu ">
+                                      <span class="span-menu">03</span>
+                                      Portofolio
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                        individual potrait
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                        couple potrait
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      group potrait
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      fashion
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      corporate
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      commercial
+                                    </a>
+                                  </div>
+                                  <div class="accordion__content margin-menu-acr">
+                                    <a href="#" class="span-acr">
+                                      others
+                                    </a>
+                                  </div>
+                                </li>
+                              </ul>
+                              <li class="text-left">
+                                <a href="#" class="h4-menu mb-20">
                                   <span class="span-menu">05</span>
                                   Contact Us
                                 </a>
@@ -95,7 +175,7 @@
         <div class="main-container">
           <section class="space--xs" style="background-color:#131313;">
             <div class="container-fluid pt-50">
-              <div class="row">
+              <div class="row padding-about">
                 <div class="col-lg-2 col-md-12 col-12 mt-20">
                   <p class="teks-menu-about">
                     About
@@ -126,7 +206,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row padding-about">
                 <div class="col-lg-2 col-md-12 col-12 mt-20">
                   <p class="teks-menu-about">
                     My Team
@@ -134,7 +214,7 @@
                 </div>
                 <div class="col-lg-10 col-md-12 col-12">
                   <div class="row">
-                    <div class="col">
+                    <div class="col" style="padding:0px !important">
                       <div class="slider" data-paging="true">
                         <ul class="slides">
                           <li class="col-lg-4 col-md-6 col-12 mt-20">
